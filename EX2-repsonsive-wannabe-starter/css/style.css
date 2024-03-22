@@ -132,3 +132,41 @@ img {
 /* tablet: dai 768px in giù
    mobile: dai 480 in giù
    bonus: sopra i 768px fino a 1160px togliere scrollbar orizzontale */
+
+@media screen and (max-width: 1160px) {
+    .container {
+        width: 100%;
+    }
+
+}
+
+/* @media screen and (max-width: 768px) è superfluo ma lo lascio 
+   perchè l'esercizio iniziale senza bonus lo richiedeva */
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .col {
+        flex-basis: 480px;
+    }
+
+    .card {
+        margin-bottom: 3rem;
+    }
+
+    .why-us img {
+        margin-bottom: 3rem;
+    }
+
+    .container {
+        padding: 0;
+    }
+}
